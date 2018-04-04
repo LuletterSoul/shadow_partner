@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.years.ground_station.widget.scrollview.ElasticScrollView
+<com.years.shadow.widget.scrollview.ElasticScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:keepScreenOn="true"
@@ -379,4 +379,4 @@
 
 </LinearLayout>
 
-</com.years.ground_station.widget.scrollview.ElasticScrollView>
+</com.years.shadow.widget.scrollview.ElasticScrollView>

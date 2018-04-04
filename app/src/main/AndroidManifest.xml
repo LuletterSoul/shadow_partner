@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
-        android:name=".activity.BaseApplication"
+        android:name="com.years.shadow.activity.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/icon_start"
         android:label="@string/app_name"
@@ -19,7 +19,7 @@
         android:supportsRtl="true">
 
         <activity
-            android:name=".activity.Activity_Home"
+            android:name="com.years.shadow.activity.Activity_Home"
             android:label="@string/app_name"
             android:theme="@style/ActivityNotTitleByTranslucent">
             <intent-filter>
@@ -42,25 +42,25 @@
         <!--<service android:name=".service.Service_usb" />-->
 
         <activity
-            android:name=".activity.Activity_Receive"
+            android:name="com.years.shadow.activity.Activity_Receive"
             android:label="@string/activity_receive"
             android:theme="@style/ActivityStyle"
             android:windowSoftInputMode="adjustUnspecified|stateHidden"
             />
         <activity
-            android:name=".activity.Activity_Curve"
+            android:name="com.years.shadow.activity.Activity_Curve"
             android:label="数据波形"
             android:theme="@style/ActivityStyle" />
         <activity
-            android:name=".USBHIDTerminal"
+            android:name="com.years.shadow.USBHIDTerminal"
             android:label="@string/app_name" >
         </activity>
 
-        <activity android:name=".activity.Activityshow"></activity>
+        <activity android:name="com.years.shadow.activity.Activityshow"></activity>
 
-        <activity android:name=".activity.Activity_hid"></activity>
+        <activity android:name="com.years.shadow.activity.Activity_hid"></activity>
 
-        <activity android:name=".Booth.BluetoothChat"
+        <activity android:name="com.years.shadow.booth.BluetoothChat"
             android:label="@string/app_name"
             android:theme="@style/android:Theme.Light"
             android:configChanges="orientation|keyboardHidden">
@@ -71,24 +71,24 @@
 
         </activity>
 
-        <activity android:name=".Booth.DeviceListActivity"
+        <activity android:name="com.years.shadow.booth.DeviceListActivity"
             android:label="@string/select_device"
             android:theme="@android:style/Theme.Dialog"
             android:configChanges="orientation|keyboardHidden" >
 
         </activity>
 
-        <activity android:name=".Booth.RemoteCtl"
+        <activity android:name="com.years.shadow.booth.RemoteCtl"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
 
         <service
-            android:name=".core.services.USBHIDService"
+            android:name="com.years.shadow.core.services.USBHIDService"
             android:icon="@drawable/ic_launcher"
             android:label="@string/app_name" />
 
-        <service android:name=".service.ShadowService"></service>
+        <service android:name="com.years.shadow.service.ShadowService"></service>
 
     </application>
 
