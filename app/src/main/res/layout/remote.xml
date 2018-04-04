@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color2">
+
+
+    <Button
+        android:id="@+id/btnLeftmin"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="237dp"
+        android:minHeight="0dp"
+        android:minWidth="1dp"
+        android:text="-" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_x="49dp"
+        android:layout_y="69dp"
+        android:orientation="vertical">
+
+        <com.kongqw.rockerlibrary.view.RockerView
+            android:id="@+id/rubberLeft"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_y="100dp"
+            app:areaBackground="@color/color4"
+            app:rockerBackground="@color/color2"
+            app:rockerRadius="40dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLeftpuls"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="174dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btnRightmin"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_x="586dp"
+        android:layout_y="241dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btnRightplus"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_x="581dp"
+        android:layout_y="170dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="136dp"
+        android:layout_height="66dp"
+        android:layout_x="245dp"
+        android:layout_y="15dp"
+        android:background="@color/colorAcent"
+        android:text="STOP!" />
+
+    <TextView
+        android:id="@+id/speedLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="152dp"
+        android:layout_y="26dp"
+
+        android:text="00" />
+
+    <TextView
+
+        android:id="@+id/speedRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="446dp"
+        android:layout_y="29dp"
+
+        android:text="00" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="322dp"
+        android:layout_y="67dp">
+
+        <com.kongqw.rockerlibrary.view.RockerView
+            android:id="@+id/rubberRight"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_y="300dp"
+            app:areaBackground="@color/color4"
+            app:rockerBackground="@color/color2"
+            app:rockerRadius="40dp" />
+    </LinearLayout>
+
+
+</AbsoluteLayout>

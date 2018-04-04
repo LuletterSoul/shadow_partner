@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.years.ground_station">
+
+    <!-- USB -->
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <!-- Bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".activity.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_start"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".activity.Activity_Home"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityNotTitleByTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--<activity-->
+            <!--android:name=".activity.Activity_Home"-->
+            <!--android:theme="@style/ActivityStyle">-->
+        <!--</activity>-->
+
+        <!--<service android:name=".service.Service_Test">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.years.ground_station.service.Service_Test" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+        <!--<service android:name=".service.Service_usb" />-->
+
+        <activity
+            android:name=".activity.Activity_Receive"
+            android:label="@string/activity_receive"
+            android:theme="@style/ActivityStyle"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            />
+        <activity
+            android:name=".activity.Activity_Curve"
+            android:label="数据波形"
+            android:theme="@style/ActivityStyle" />
+        <activity
+            android:name=".USBHIDTerminal"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity android:name=".activity.Activityshow"></activity>
+
+        <activity android:name=".activity.Activity_hid"></activity>
+
+        <activity android:name=".Booth.BluetoothChat"
+            android:label="@string/app_name"
+            android:theme="@style/android:Theme.Light"
+            android:configChanges="orientation|keyboardHidden">
+
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".Booth.DeviceListActivity"
+            android:label="@string/select_device"
+            android:theme="@android:style/Theme.Dialog"
+            android:configChanges="orientation|keyboardHidden" >
+
+        </activity>
+
+        <activity android:name=".Booth.RemoteCtl"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+
+        <service
+            android:name=".core.services.USBHIDService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" />
+
+        <service android:name=".service.ShadowService"></service>
+
+    </application>
+
+</manifest>
